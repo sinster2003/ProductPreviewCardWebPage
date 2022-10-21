@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card,
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.image .desktopImage,
+.description {
+    height: 29.5rem;
+}
+
+.image .desktopImage {
+    border-radius: 10px 0 0 10px;
+}
+
+.image .mobileImage {
+    display: none;
+}
+
+.description {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    width: 19rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+}
+
+.subHeading {
+    padding: 2rem 0 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.heading {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.para {
+    color: hsl(228, 12%, 48%);
+    padding: 1.25rem 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.cost {
+    font-size: 2.25rem;
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+    padding: 1rem 0;
+}
+
+.discount {
+    padding-left: 1rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button svg {
+    margin-right: 0.75rem;
+}
+
+button:hover {
+    background-color: hsl(158, 68%, 17%);
+    cursor: pointer;
+}
+
+/* CSS media queries for mobile design */
+@media (max-width: 376px) {
+
+    .card {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image .mobileImage {
+        display: block;
+        width: 21.15rem;
+        margin: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .image .desktopImage {
+        display: none;
+    }
+
+    .description {
+        width: 21.15rem;
+        border-radius: 0 0 10px 10px;
+        height: 23rem;
+        padding: 0 1.25rem;
+    }
+
+    .subHeading {
+        padding: 1rem 0 0.65rem 0;
+    }
+
+    .para {
+        padding: 1.15rem 0;
+        font-size: 14px;
+    }
+
+    .cost {
+        padding: 0.5rem 0 1rem 0;
+    }
+}
